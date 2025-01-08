@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <title>Guarder</title>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    /* Unique Popup Styles */
+    .unique-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        padding: 20px;
+        background-color: #fff;
+        border: 2px solid #3498db;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1050;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .unique-popup-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1040;
+    }
+
+    .unique-close-btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+    .unique-close-btn:hover {
+        background-color: #2980b9;
+    }
+</style>
+ 
+</head>
+
+<body>
+      <!-- Unique Popup Content -->
+      <div id="unique-popup-overlay" class="unique-popup-overlay"></div>
+      <div id="unique-popup" class="unique-popup">
+          <h2>Welkom op onze site!</h2>
+          <p>Wil je een leuk muziekje tijdens het lezen?</p>
+          <p>Klik dan op play!</p>
+          <audio controls>
+            <source src="Music/Music1.mp3" type="audio/mpeg">
+          </audio>
+          <button id="unique-close-btn" class="unique-close-btn">Close</button>
+      </div>
+  
+      <script>
+          // Function to show the unique popup
+          function showUniquePopup() {
+              document.getElementById('unique-popup').style.display = 'block';
+              document.getElementById('unique-popup-overlay').style.display = 'block';
+          }
+  
+          // Function to close the unique popup
+          function closeUniquePopup() {
+              document.getElementById('unique-popup').style.display = 'none';
+              document.getElementById('unique-popup-overlay').style.display = 'none';
+          }
+  
+          // Show the unique popup when the page is loaded
+          window.onload = function() {
+              showUniquePopup();
+          }
+  
+          // Close the unique popup when the button is clicked
+          document.getElementById('unique-close-btn').onclick = closeUniquePopup;
+      </script>
+      
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="./images/cat BG.jpg" alt=""> <!--Background image homepage!-->
+      </div>
+    </div>
+
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>Compressie bestanden</span>
+            </a> <!--LogoNaamLinksBoven-->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="compressie-bestanden.html"> Compressie bestanden </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Bronnen.html"> Bronnen </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact ons</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                    <br>
+                      <span>
+                        7-ZIP
+                      </span>
+                    </h1>
+                    <p>
+                      7-Zip is een gratis en daardoor populaire compressietechniek voor het comprimeren en decomprimeren van bestanden. De software is open-source, dat betekent...
+                    </p>
+                    <div class="btn-box">
+                      <a href="7-zip1.html" class="btn-1"> Lees Meer </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                    <br>
+                      <span>
+                        APK
+                      </span>
+                    </h1>
+                    <p>
+                      Een APK-bestand (Android Package Kit) is een bestandstype dat wordt gebruikt voor het installeren van applicaties op Android-apparaten. Dit bestandsformaat is...
+                    </p>
+                    <div class="btn-box">
+                      <a href="apk1.html" class="btn-1"> Lees Meer </a>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                    <br>
+                      <span>
+                        DMG
+                      </span>
+                    </h1>
+                    <p>
+                      Een .dmg bestand staat voor disk image. Het is een bestandstype dat vooral op macOS wordt gebruikt voor het delen van software en archiveren van gegevens. Een dmg bestand...
+                    </p>
+                    <div class="btn-box">
+                      <a href="dmg1.html" class="btn-1"> Lees Meer </a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container idicator_container">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+ 
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="https://images.pubble.cloud/worker/jpg/quick/1920/381668/65142601/content/2021/1/498e796d-6668-495d-8849-079e6824bece" width="500" height="300" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="detail-box">
+            <div class="heading_container ">
+              <h2>
+                Wie zijn wij?
+              </h2>
+            </div>
+            <p>
+              Hoi! Wij zijn Joris en Eelco, 2 leerlingen van het Jacob van Liesveldt. Voor informatica hebben wij de opdracht gekregen om een wesite te maken. Wij hebben ervoor gekozen om een website over de verschillende compressie-technieken te maken.
+            </p>
+            <div class="btn-box">
+              <a href="">
+                Lees meer!
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+ 
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container ">
+      <div class="heading_container heading_center">
+        <h2>
+          Vergroot uw digitale kennis!
+        </h2>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Je bent nooit te oud om te leren!
+                </h4>
+                <p>
+                 In een tijd waar bijna alles digitaal is, is het heel handig om je "computerskills" goed te beheersen!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  1 van die skills is
+                </h4>
+                <p>
+                  Weten hoe je verschillende gecomprimeerde bestanden kan gebruiken en hoe ze werken!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h4>
+                  Bent u klaar om hier over te leren?
+                </h4>
+                <p>
+                  Kijk dan rond op onze website!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-box">
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="contact_bg_box">
+      <div class="img-box">
+        <img src="images/contact-bg.jpg" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Stuur ons een bericht!
+        </h2>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <form action="#">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" placeholder="Voledige Naam" required/>
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email " required/>
+                  </div>
+                  <div>
+                    <input type="number" placeholder="Telefoonnummer" required/>
+                  </div>
+                  <div class="">
+                    <input type="text" placeholder="Uw bericht" class="message_input" required/>
+                  </div>
+                  <div class="btn-box">
+                    <button type="submit">
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Popup Modal -->
+  <div id="popupModal" class="popup_modal">
+    <div class="popup_content">
+      
+      <p>Uw bericht is verstuurd!</p>
+      <br>
+      <p>Ons team probeert u zo snel mogelijk te beantwoorden</p>
+      <button class="close-btn" onclick="closePopup()">Sluit</button>
+    </div>
+  </div>
+  
+  <style>
+    /* Popup Modal */
+    .popup_modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+    }
+  
+    .popup_content {
+      background-color: white;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 20%;
+      text-align: center;
+      position: relative;
+    }
+  
+    .close {
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      right: 15px;
+    }
+  
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  
+    /* Style for the Close button inside the modal */
+    .close-btn {
+      padding: 10px 20px;
+      background-color: gray;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .close-btn:hover {
+      background-color: red;
+    }
+  </style>
+  
+  <script>
+  // Function to show the popup
+  function showPopup() {
+    document.getElementById("popupModal").style.display = "block";
+  }
+  
+  // Function to close the popup
+  function closePopup() {
+    document.getElementById("popupModal").style.display = "none";
+  }
+  
+  // Event listener for form submission
+  document.querySelector("form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form from submitting
+    showPopup(); // Show the popup
+  });
+  </script>
+  
+
+  <!-- end contact section -->
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="index.html">
+          <div class="info_links">
+            <h5>
+              Handige Links
+            </h5>
+            <ul>
+              <li>
+                <a href="contact.html">
+                  Contact Ons
+                </a>
+              </li>
+              <li>
+                <a href="compressie-bestanden.html">
+                  Compressie technieken
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span> | Gemaakt op basis van <a href="https://html.design/?s=guarder">Guarder Template</a> door
+      <span>Joris en Eelco</span>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <title>MSI</title>
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="./images/catBG_MSI.jfif" alt=""> <!--Background image homepage!-->
+      </div>
+    </div>
+
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>Compressie bestanden</span>
+            </a> <!--LogoNaamLinksBoven-->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="compressie-bestanden.html"> Compressie bestanden </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Bronnen.html"> Bronnen </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact ons</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="detail-box">
+                    <h2>Wat is een MSI-bestand? </h2>
+                    <br>
+                    <p>Een MSI-bestand is ook wel bekend als een Windows Installer Package, dit is een bestandsformaat dat wordt gebruikt door het Windows voor het installeren, updaten of verwijderen van software. Dit type bestand wordt door de Windows Installer-service verwerkt en bevat alle informatie die nodig is om een programma correct te installeren. Deze informatie bestaat bestanden, configuraties, registervermeldingen en eventueel benodigde extra acties, zoals het instellen van rechten of het uitvoeren van andere programma's tijdens de installatie. </p>
+                    <br>
+                    <h2>Hoe werkt een MSI-bestand? </h2>
+                    <br>
+                    <p>Een MSI-bestand is feite een gecomprimeerde database waarin rijen zijn opgenomen met instructies voor de installatie. Deze rijen bevatten gegevens zoals waar bestanden moeten worden geplaatst, welke systeeminstellingen moeten worden aangepast en welke afhankelijkheden er zijn. Deze opzet biedt meer controle en flexibiliteit dan andere installatieprogramma's zoals .EXE-bestanden. MSI-bestanden kunnen bijvoorbeeld automatisch beschadigde bestanden herstellen als deze later tijdens gebruik ontbreken of beschadigd raken.  
+                        Een ander kenmerk van MSI-bestanden is dat ze gebruikmaken van een transactie gebaseerde installatie, wat betekent dat als een installatie halverwege mislukt, het systeem terugkeert naar de oorspronkelijke staat. Dit voorkomt dat gedeeltelijk geïnstalleerde programma's ongewenste problemen veroorzaken. Dankzij deze rollback-functie is het MSI-bestand betrouwbaarder dan traditionele installatiemethoden. </p>
+                    <br>
+                    <h2>Structuur van een MSI-bestand </h2>
+                    <br>
+                    <p>De interne structuur van een MSI-bestand is opgebouwd uit rijen die in een relationele database worden bewaard. Elke tabel bevat specifieke gegevens over verschillende onderdelen van de installatie, zoals:  
+                      <br>
+                      Componenten: Dit zijn de individuele delen van het programma die moeten worden geïnstalleerd. <br>
+                      Bestemmingen: De locaties op de harde schijf waar de bestanden geplaatst moeten worden. <br>
+                      Acties: Specifieke acties die moeten worden uitgevoerd, zoals het instellen van registerinstellingen of het uitvoeren van scriptbestanden. 
+                      <br><br>
+                      MSI-bestanden kunnen ook de installatie van updates beheren. Een veelgebruikte functie is bijvoorbeeld patch management, waarbij een MSI-bestand kan worden gebruikt om updates voor een programma te installeren zonder dat het hele programma opnieuw hoeft te worden geïnstalleerd. </p>
+                    <br>
+                    <h2>MSI versus EXE-bestanden </h2>
+                    <br>
+                    <p>MSI- als EXE-bestanden worden gebruikt voor software-installatie, maar wat zijn enkele belangrijke verschillen? MSI-bestanden zijn ontworpen voor grootschalige, geautomatiseerde implementaties. Ook biedt het uitgebreide beheermogelijkheden. EXE-bestanden zijn meestal makkelijkere installatietools, die vaak met minder geavanceerde functies komen. Een EXE-bestand kan bijvoorbeeld niet altijd automatisch beschadigde bestanden herstellen of een gedeeltelijke installatie terugdraaien. Ook biedt een MSI-bestand meer mogelijkheden voor aanpassingen en groepsimplementaties, wat vooral handig is voor IT-beheerders in zakelijke omgevingen. 
+
+                      MSI-bestanden bieden ook betere integratie met Windows-beheer via tools zoals Group Policy. Hiermee kunnen IT-beheerders software automatisch op meerdere computers binnen een netwerk installeren zonder dat het handmatig op iedere computer moet geïnstalleerd worden. </p>
+                    <h2>Geschiedenis en gebruik </h2>
+                    <p>MSI werd voor het eerst geïntroduceerd door Microsoft in het begin van de jaren 2000, Dit was een onderdeel van hun Windows Installer-technologie. Het werd ontwikkeld om een makkelijke en eenvoudige methode te maken voor het beheren van software-installaties in professionele omgevingen. Voorheen was het installeren van software vaak een ingewikkeld proces waarbij handmatige configuratie nodig was, wat leidde tot fouten en bugs. Door de standaard structuur van het MSI-bestand konden softwareontwikkelaars hun installaties eenvoudiger maken. IT-beheerders meer controle kregen over hoe en wanneer software werd geïnstalleerd. Dit was een revolutionaire en nuttige update. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+  
+
+  
+
+  
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="info_logo">
+            <a class="navbar-brand" href="index.html">
+          <div class="info_links">
+            <h5>
+              Handige Links
+            </h5>
+            <ul>
+              <li>
+                <a href="contact.html">
+                  Contact Ons
+                </a>
+              </li>
+              <li>
+                <a href="compressie-bestanden.html">
+                  Compressie technieken
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span> | Gemaakt op basis van <a href="https://html.design/?s=guarder">Guarder Template</a> door
+      <span>Joris en Eelco</span>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
