@@ -11,7 +11,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <title>Guarder</title>
+  <title>Home</title>
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- fonts style -->
@@ -111,7 +111,7 @@
       </div>
     </div>
 
-      <div class="header_bottom">
+      <div class="header_bottom" id="toppie">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
@@ -135,6 +135,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact ons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="taakverdeling.html">taakverdeling</a>
                 </li>
               </ul>
             </div>
@@ -252,11 +255,6 @@
             <p>
               Hoi! Wij zijn Joris en Eelco, 2 leerlingen van het Jacob van Liesveldt. Voor informatica hebben wij de opdracht gekregen om een wesite te maken. Wij hebben ervoor gekozen om een website over de verschillende compressie-technieken te maken.
             </p>
-            <div class="btn-box">
-              <a href="">
-                Lees meer!
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -338,10 +336,6 @@
     </div>
   </section>
 
-  <!-- end client section -->
-
-  <!-- contact section -->
-
   <section class="contact_section layout_padding">
     <div class="contact_bg_box">
       <div class="img-box">
@@ -361,20 +355,20 @@
               <div class="contact_form-container">
                 <div>
                   <div>
-                    <input type="text" placeholder="Voledige Naam" required/>
+                    <input onkeydown="return /[a-z\ ]/i.test(event.key)" placeholder="Volledige naam" required>
                   </div>
                   <div>
                     <input type="email" placeholder="Email " required/>
                   </div>
                   <div>
-                    <input type="number" placeholder="Telefoonnummer" required/>
+                    <input type="text" placeholder="Telefoonnummer" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required />
                   </div>
                   <div class="">
                     <input type="text" placeholder="Uw bericht" class="message_input" required/>
                   </div>
                   <div class="btn-box">
                     <button type="submit">
-                      Send
+                      verzenden
                     </button>
                   </div>
                 </div>
@@ -479,49 +473,45 @@
   <section class="info_section ">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <div class="info_logo">
-            <a class="navbar-brand" href="index.html">
+        <div class="col-md-5">
+          <div class="info_logo"> 
           <div class="info_links">
             <h5>
               Handige Links
             </h5>
             <ul>
               <li>
+                <a href="#toppie">Naar de bovenkant van de pagina</a>
+              </li>
+              <li>
+                <a href="compressie-bestanden.html">
+                  Compressie bestanden
+                </a>
+              <li>
                 <a href="contact.html">
                   Contact Ons
                 </a>
               </li>
-              <li>
-                <a href="compressie-bestanden.html">
-                  Compressie technieken
-                </a>
+                <li>
+                  <a href="Bronnen.html">Bronnen</a>
+                </li>
               </li>
             </ul>
           </div>
         </div>
-        
       </div>
     </div>
   </section>
 
-  <!-- end info_section -->
-
-
-
-
-  <!-- footer section -->
   <footer class="container-fluid footer_section">
     <p>
       &copy; <span id="currentYear"></span> | Gemaakt op basis van <a href="https://html.design/?s=guarder">Guarder Template</a> door
       <span>Joris en Eelco</span>
     </p>
   </footer>
-  <!-- footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
 </body>
-
 </html>
